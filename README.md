@@ -99,8 +99,6 @@ ssh rico@remote_ip
 
 ![connect](Images/connect.png)
 
----
-
 ## 📂 Copying Files via SCP
 
 ### Create a simple script and copy to remote server
