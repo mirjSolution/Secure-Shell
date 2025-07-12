@@ -69,18 +69,21 @@ ls. ssh
 
 ### Add your public key to the remote server:
 
+![Settingup](Images/settingup.gif)
+
+```bash
+# On your ubuntu terminal
+cat .ssh/id_rsa.pub
+
+# copy your public key
+```
+
 ```bash
 # On the remote server
 mkdir -p ~/.ssh
-nano ~/.ssh/authorized_keys
+vim ~/.ssh/authorized_keys
 
-# Paste your public key here and save
-```
-
-### Or use `ssh-copy-id` (if available):
-
-```bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote_ip
+# Paste your public key
 ```
 
 ---
