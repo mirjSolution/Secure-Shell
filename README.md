@@ -103,7 +103,7 @@ ssh rico@remote_ip
 
 ## 📂 Copying Files via SCP
 
-![scp](Images/scp.png)
+![scp](Images/scp.gif)
 
 ### Create a simple script and copy to remote server
 
