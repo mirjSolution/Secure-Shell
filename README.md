@@ -93,6 +93,8 @@ vim ~/.ssh/authorized_keys
 ```bash
 # Standard connection
 ssh rico@remote_ip
+
+# To connect make sure you enable remote login or allow SSH to your fire wall
 ```
 
 ![connect](Images/connect.png)
