@@ -28,8 +28,8 @@ Use cases:
 ### 2. **SSH Key Pairs (Public/Private)**
 
 - Recommended authentication method.
-- **Private Key** stays on the client machine.
-- **Public Key** is copied to the remote server under `~/.ssh/authorized_keys`.
+- **Private Key** stays on the client machine (e.g id_rsa).
+- **Public Key** is copied to the remote server under `~/.ssh/authorized_keys` (e.g id_rsa_pub).
 - More secure and supports automation.
 
 ---
