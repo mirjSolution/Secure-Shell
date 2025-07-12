@@ -103,24 +103,27 @@ ssh rico@remote_ip
 
 ## 📂 Copying Files via SCP
 
+### Create a simple script and copy to remote server
+
 ```bash
-# Syntax: scp <source> <user@remote_host>:<destination_path>
-scp test.sh root@192.168.1.10:/root/
+vim greet.sh
+echo "Hello World"
+
+# Save and exit
 ```
 
----
-
-## 🚀 Running Remote Scripts
+# on terminal
 
 ```bash
-# SSH into the remote server
-ssh root@192.168.1.10
-
 # Make script executable
-chmod +x test.sh
+chmod a+x greet.sh
 
 # Execute it
-./test.sh
+./greet.sh
+
+scp greet.sh rico@192.168.2.234:~/
+
+# this will copy the file "greet.sh" to remote server user rico's home directory
 ```
 
 ---
@@ -131,19 +134,6 @@ chmod +x test.sh
 - Restrict access to specific IP addresses when possible.
 - Use cloud platform firewalls or `ufw`/`iptables`.
 
----
-
-## 📤 Optional: Delete DigitalOcean Server
-
-To avoid billing, you can destroy the droplet after use:
-
-```bash
-# On DigitalOcean UI
-Go to Droplets → Select Droplet → Destroy
-```
-
----
-
 ## 💡 Summary
 
 - SSH is essential for DevOps work and remote server management.
@@ -151,5 +141,5 @@ Go to Droplets → Select Droplet → Destroy
 - SCP allows secure file transfers.
 - SSH is a foundational skill for deploying, managing, and automating infrastructure.
 
-🧑‍💻 _Created by Rico John Dato-on_  
+🧑‍💻 _Created by Rico John Dato-on_
 🔗 [LinkedIn](https://www.linkedin.com/in/rico-john-dato-on) • [Portfolio](https://ricodatoon.netlify.app)
