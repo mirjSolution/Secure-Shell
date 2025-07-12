@@ -72,7 +72,7 @@ ls. ssh
 ![Settingup](Images/settingup.gif)
 
 ```bash
-# On your ubuntu terminal
+# On your linux machine
 cat .ssh/id_rsa.pub
 
 # copy your public key
@@ -92,11 +92,10 @@ vim ~/.ssh/authorized_keys
 
 ```bash
 # Standard connection
-ssh user@remote_ip
-
-# Specify a key (if not using default)
-ssh -i ~/.ssh/my_custom_key user@remote_ip
+ssh rico@remote_ip
 ```
+
+![connect](Images/connect.png)
 
 ---
 
