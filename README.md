@@ -97,9 +97,13 @@ ssh rico@remote_ip
 # To connect make sure you enable remote login or allow SSH to your fire wall
 ```
 
+---
+
 ![connect](Images/connect.png)
 
 ## 📂 Copying Files via SCP
+
+![scp](Images/scp.png)
 
 ### Create a simple script and copy to remote server
 
