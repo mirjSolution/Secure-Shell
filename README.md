@@ -1,4 +1,4 @@
-# 🔐 SSH (Secure Shell) 
+# 🔐 SSH (Secure Shell)
 
 This repository contains summarized notes and usage examples of **SSH (Secure Shell)**. SSH is a secure protocol that allows users to access and control remote servers.
 
@@ -9,6 +9,7 @@ This repository contains summarized notes and usage examples of **SSH (Secure Sh
 **SSH (Secure Shell)** is a cryptographic network protocol for operating network services securely over an unsecured network.
 
 Use cases:
+
 - Securely connect to remote servers
 - Transfer files using `scp` or `sftp`
 - Execute remote commands or scripts
@@ -19,11 +20,13 @@ Use cases:
 ## 🔑 SSH Authentication Methods
 
 ### 1. **Username & Password**
+
 - Traditional way to authenticate.
 - Used when a user is created on the remote server.
 - Less secure and requires manual input.
 
 ### 2. **SSH Key Pairs (Public/Private)**
+
 - Recommended authentication method.
 - **Private Key** stays on the client machine.
 - **Public Key** is copied to the remote server under `~/.ssh/authorized_keys`.
@@ -51,11 +54,21 @@ ssh-keygen -t rsa
 # Default location: ~/.ssh/id_rsa (private), ~/.ssh/id_rsa.pub (public)
 ```
 
+![SSH Image](Images/ssh.png)
+
+```bash
+# Check .ssh folder
+ls. ssh
+```
+
+![SSH Image1](Images/ssh1.png)
+
 ---
 
 ## 📁 Setting Up SSH Access on Remote Server
 
 ### Add your public key to the remote server:
+
 ```bash
 # On the remote server
 mkdir -p ~/.ssh
@@ -65,6 +78,7 @@ nano ~/.ssh/authorized_keys
 ```
 
 ### Or use `ssh-copy-id` (if available):
+
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote_ip
 ```
@@ -118,6 +132,7 @@ chmod +x test.sh
 ## 📤 Optional: Delete DigitalOcean Server
 
 To avoid billing, you can destroy the droplet after use:
+
 ```bash
 # On DigitalOcean UI
 Go to Droplets → Select Droplet → Destroy
@@ -132,6 +147,5 @@ Go to Droplets → Select Droplet → Destroy
 - SCP allows secure file transfers.
 - SSH is a foundational skill for deploying, managing, and automating infrastructure.
 
-
-
-
+🧑‍💻 _Created by Rico John Dato-on_  
+🔗 [LinkedIn](https://www.linkedin.com/in/rico-john-dato-on) • [Portfolio](https://ricodatoon.netlify.app)
